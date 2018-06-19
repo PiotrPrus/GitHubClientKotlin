@@ -12,7 +12,7 @@ class Adapter: RecyclerView.Adapter<Adapter.Holder>() {
 
     val repos = ArrayList<Repository>()
 
-    fun getRepositories(list: Collection<Repository>) {
+    fun setRepositories(list: Collection<Repository>) {
         repos.clear()
         repos.addAll(list)
         notifyDataSetChanged()
